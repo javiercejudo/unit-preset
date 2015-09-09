@@ -1,6 +1,6 @@
 {
   "name": "unit-preset",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Unit preset [[0, 1], [0, 1]]",
   "main": "src/index.js",
   "scripts": {
