@@ -4,15 +4,12 @@
 
 require('should');
 
+var rescaleUtil = require('rescale-util');
 var unitPreset = require('../src/index');
 
 describe('unit scale', function() {
-  it('should be an array', function() {
-    ({}.toString.call(unitPreset)).should.equal('[object Array]');
-  });
-
-  it('should have two elements', function() {
-    unitPreset.length.should.be.exactly(2);
+  it('should be a preset', function() {
+    rescaleUtil.isValidPreset(unitPreset).should.be.exactly(true);
   });
 
   it('should have the unit scale as the first element', function() {
